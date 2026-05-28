@@ -15,7 +15,7 @@ app.use(express.static(__dirname));
 const GAS_WEBAPP_URL = process.env.GAS_WEBAPP_URL || "https://script.google.com/macros/s/AKfycbwYsl3issVM1SgFyeuRVCITmIfex6kc7lmuiRXVpxbD195ctM0aAsyUxBV_NZxVz9UH/exec";
 const db = createClient({
     url: process.env.TURSO_DATABASE_URL || "libsql://senninchat-senninch.aws-ap-northeast-1.turso.io",
-    authToken: process.env.TURSO_AUTH_TOKEN || "YOUR_TURSO_AUTH_TOKEN" // 安全のためプレースホルダーに変更しています
+    authToken: process.env.TURSO_AUTH_TOKEN || "eyJhbGciOiJFZERTQSIsInR5cCI6IkpXVCJ9.eyJhIjoicnciLCJpYXQiOjE3Nzk5NjQyNTYsImlkIjoiMDE5ZTY5NTgtZTcwMS03NzhmLWFkYjAtMGQzMzM5ZDdlMDBlIiwicmlkIjoiZGU3ZTdlNTktYjZmMi00YWQ4LWIwNDMtYzkyMmY4ZDE2NGVkIn0.xFezIUh699UgV47BYKLkRWbgvinspj9R7KEvnk9DLZXzPi2RS8W11CXvKff0rP7F7L6sSQ7tkyR_ym9qw-l4Dw" // 安全のためプレースホルダーに変更しています
 });
 
 // データベースの初期化
